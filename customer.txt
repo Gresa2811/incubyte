@@ -1,0 +1,25 @@
+create table customer
+(
+	cust_name varchar(255) primary key,
+	cust_id varchar2(18) NOT NULL,
+	cust_open_date date NOT NULL,
+	last_consulted_date date,
+	vac_type char(5),
+	doc_consulted char(255),
+	state char(5),
+	country char(5),
+	post_code integer(5),
+	dob date,
+	active_cust char(1));
+
+=====Insert Data=====
+insert into customer values('Alex', '123457', '2012-10-12', '2012-10-13' 'MVD', 'Paul', 'SA', 'USA', '06031987', 'A');
+
+
+insert into customer values('John', '123458', '2012-10-12', '2012-10-13', 'MVD', 'Paul', 'TN', 'IND', '06031987', 'A');	
+
+insert into customer values('Mathew', '123459', '2012-10-12', '2012-10-13', 'MVD', 'Paul', 'WAS', 'PHIL', '06031987', 'A');
+
+insert into customer values('Matt', '12345', '2012-10-12', '2012-10-13', 'MVD', 'Paul', 'BOS', 'NYC', '06031987', 'A');
+
+insert into customer values('Jacob', '1256', '2012-10-12', '2012-10-13', 'MVD', 'Paul', 'VIC', 'AU', '06031987', 'A');
